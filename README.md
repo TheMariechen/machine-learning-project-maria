@@ -52,85 +52,61 @@ No features removed.
 
 ## Model Building & Evaluation
 
-Model
+Model - R² - MAE - RMSE
 
-R²
+**KNN Basic**: R² = 0.76
 
-MAE
+**KNN Normalized**: R² = 0.97
 
-RMSE
+**KNN Standardized**: R² = 0.96
 
-KNN Basic
+**Linear Regression**: 
 
-0.76
+R² = 0.91
 
--
+MAE = 49.39
 
--
+RMSE = 74.35
 
-KNN Normalized
+**Linear Regression Normalized**: 
 
-0.97
+R² = 0.91
 
--
+MAE = 49.39
 
--
+RMSE = 74.35
 
-KNN Standardized
+**Decision Tree**: 
 
-0.96
+R² = 0.93
 
--
+MAE = 38.08
 
--
+RMSE = 62.89
 
-Linear Regression
+**Random Forest**: 
 
-0.91
+R² = 0.96
 
-49.39
+MAE = 26.35
 
-74.35
+RMSE =  47.27
 
-Linear Regression Normalized
+**AdaBoost**
 
-0.91
+R² = 0.98
 
-49.39
+MAE = 20.16
 
-74.35
+RMSE = 35.14
 
-Decision Tree
+**Gradient Boost**: 
 
-0.93
+R² = 0.9827
 
-38.08
+MAE = 12.22
 
-62.89
-
-Random Forest
-
-0.96
-
-26.35
-
-47.27
-
-AdaBoost
-
-0.98
-
-20.16
-
-35.14
-
-Gradient Boost
-
-0.9827
-
-12.22
-
-32.62
+RMSE = 32.62
 
 ## Key Findings & Insights
 
@@ -142,17 +118,9 @@ The class variable (business/economy) had the highest impact on price prediction
 
 ## Challenges & Learnings
 
-Understanding the Scope.
+Understanding the scope, gradual content progress, difficulty in selecting a dataset suitable for all applications.
 
-Gradual content progress.
-
-Difficulty in selecting a dataset suitable for all applications.
-
-Time Constraints
-
-Limited time led to missed improvements (e.g., transforming duration to an integer format for better interpretation).
-
-Could not refine visualizations due to time limitations.
+Time Constraints: Limited time led to missed improvements (e.g., transforming duration to an integer format for better interpretation). Could not refine visualizations due to time limitations.
 
 ## Future Work & Improvements
 
@@ -162,9 +130,7 @@ The class variable significantly influenced price prediction.
 
 **Potential Improvements** 
 
-Exclude class from the model.
-
-Analyse economy and business class separately to assess the impact of other factors.
+Exclude class from the model. Analyse economy and business class separately to assess the impact of other factors.
 
 ## Conclusion
 

@@ -1,42 +1,38 @@
-# machine-learning-project-maria
+# ML Flight Price Prediction Project 
 
-Flight Price Prediction
-
-Project Overview
+## Project Overview
 
 This project applies machine learning techniques to predict flight prices. The target variable, flight price, is continuous, making this a regression problem.
 
-Topic Relevance
+## Topic Relevance
 
-Predicting flight prices is valuable for consumers.
+Predicting flight prices is valuable for consumers. Insights from this model could help optimize ticket purchasing behaviour.
 
-Insights from this model could help optimize ticket purchasing behaviour.
+## Data Selection & Preparation
 
-Data Selection & Preparation
+### Dataset
 
-Dataset
+**Size**: 300,000 rows.
 
-Size: 300,000 rows.
+**Scope**: Flights between India's top six metro cities.
 
-Scope: Flights between India's top six metro cities.
+**Source**: Kaggle (original data scraped from Easemytrip, covering 11 February – 31 March 2022). Found here: https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction/data
 
-Source: Kaggle (original data scraped from Easemytrip, covering 11 February – 31 March 2022). Found here: https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction/data
+### Features
 
-Features
+**Categorical**: Airline, flight, source city, destination city, departure time, arrival time (morning, early morning, afternoon, evening, night, late night), class.
 
-Categorical: Airline, flight, source city, destination city, departure time, arrival time (morning, early morning, afternoon, evening, night, late night), class.
+**Continuous**: Duration, days left, price.
 
-Continuous: Duration, days left, price.
-
-Data Cleaning & Wrangling
+### Data Cleaning & Wrangling
 
 Created euro_price column by converting rupee prices using an exchange rate.
 
 Dropped unnecessary columns: unnamed column, flight code, rupee price.
 
-Feature Engineering & Selection
+### Feature Engineering & Selection
 
-Transforming Categorical Variables
+**Transforming Categorical Variables**
 
 One-Hot Encoding: Applied to airline, source_city, destination_city, departure_time, arrival_time.
 
@@ -46,7 +42,7 @@ class (business/economy) converted to 0/1.
 
 number of stops (zero, one, two or more) converted to 0/1/2.
 
-Feature Selection
+### Feature Selection
 
 Low correlation among features.
 
@@ -54,7 +50,7 @@ Sufficient correlation between features and target variable.
 
 No features removed.
 
-Model Building & Evaluation
+## Model Building & Evaluation
 
 Model
 
@@ -136,17 +132,17 @@ Gradient Boost
 
 32.62
 
-Key Findings & Insights
+## Key Findings & Insights
 
 High explanatory/prediction power across all models.
 
-Best performing models: AdaBoost and Gradient Boost (R² = 0.98) and Normalized KNN (R² = 0.97).
+**Best performing models**: AdaBoost and Gradient Boost (R² = 0.98) and Normalized KNN (R² = 0.97).
 
 The class variable (business/economy) had the highest impact on price prediction, reducing the influence of other factors.
 
-Challenges & Learnings
+## Challenges & Learnings
 
-Understanding the Scope
+Understanding the Scope.
 
 Gradual content progress.
 
@@ -158,22 +154,22 @@ Limited time led to missed improvements (e.g., transforming duration to an integ
 
 Could not refine visualizations due to time limitations.
 
-Future Work & Improvements
+## Future Work & Improvements
 
-Limitations
+**Limitations**
 
 The class variable significantly influenced price prediction.
 
-Potential Improvements
+**Potential Improvements** 
 
 Exclude class from the model.
 
 Analyse economy and business class separately to assess the impact of other factors.
 
-Conclusion
+## Conclusion
 
-Strong predictive capability across models.
+**Strong predictive capability across models.**
 
-Best models: AdaBoost and Gradient Boost (R² = 0.98).
+**Best models: AdaBoost and Gradient Boost (R² = 0.98).**
 
-Class dominance reduces the influence of nuanced factors like stops and time of travel.
+**Class dominance reduces the influence of nuanced factors like stops and time of travel.**

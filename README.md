@@ -54,11 +54,17 @@ No features removed.
 
 Model - R² - MAE - RMSE
 
-**KNN Basic**: R² = 0.76
+**KNN Basic**: 
 
-**KNN Normalized**: R² = 0.97
+R² = 0.76
 
-**KNN Standardized**: R² = 0.96
+**KNN Normalized**: 
+
+R² = 0.97
+
+**KNN Standardized**: 
+
+R² = 0.96
 
 **Linear Regression**: 
 
